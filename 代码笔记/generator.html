@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    //generator函数，是一个普通函数，但是他与function之间有一个*号
+    // 内部使用yield语句
+        function*fn(){
+            yield 1;
+            yield 2;
+            yield 3;
+        }
+        let f = fn();
+        console.log(f.next());//返回一个迭代器的对象
+        //既然是迭代器就可以使用for of
+
+   </script>
+
+</body>
+</html>
